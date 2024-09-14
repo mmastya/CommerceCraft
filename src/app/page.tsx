@@ -1,4 +1,10 @@
-import { Container, Title, TopBar, Filters } from "@/components/shared";
+import {
+  Container,
+  Title,
+  TopBar,
+  Filters,
+  ProductsGroupList,
+} from "@/components/shared";
 
 export default function Home() {
   return (
@@ -14,8 +20,150 @@ export default function Home() {
           </div>
           <div className="flex-1">
             <div className="flex flex-col gap-16">
-              {/* <ProductsGroupList title="Пиццы" items={[1, 2, 3, 4, 5]} />
-              <ProductsGroupList title="Комбо" items={[1, 2, 3, 4, 5]} /> */}
+              <ProductsGroupList
+                title="Пиццы"
+                items={[
+                  {
+                    id: 1,
+                    name: "ДоДо",
+                    imageUrl: "",
+                    price: 550,
+                    items: [{ price: 550 }],
+                  },
+                  {
+                    id: 1,
+                    name: "ДоДо",
+                    imageUrl: "",
+                    price: 550,
+                    items: [{ price: 550 }],
+                  },
+                  {
+                    id: 1,
+                    name: "ДоДо",
+                    imageUrl: "",
+                    price: 550,
+                    items: [{ price: 550 }],
+                  },
+                  {
+                    id: 1,
+                    name: "ДоДо",
+                    imageUrl: "",
+                    price: 550,
+                    items: [{ price: 550 }],
+                  },
+                  {
+                    id: 1,
+                    name: "ДоДо",
+                    imageUrl: "",
+                    price: 550,
+                    items: [{ price: 550 }],
+                  },
+                  {
+                    id: 1,
+                    name: "ДоДо",
+                    imageUrl: "",
+                    price: 550,
+                    items: [{ price: 550 }],
+                  },
+                ]}
+                categoryId={1}
+              />
+              <ProductsGroupList
+                title="Комбо"
+                items={[
+                  {
+                    id: 1,
+                    name: "ДоДо",
+                    imageUrl: "",
+                    price: 550,
+                    items: [{ price: 550 }],
+                  },
+                  {
+                    id: 1,
+                    name: "ДоДо",
+                    imageUrl: "",
+                    price: 550,
+                    items: [{ price: 550 }],
+                  },
+                  {
+                    id: 1,
+                    name: "ДоДо",
+                    imageUrl: "",
+                    price: 550,
+                    items: [{ price: 550 }],
+                  },
+                  {
+                    id: 1,
+                    name: "ДоДо",
+                    imageUrl: "",
+                    price: 550,
+                    items: [{ price: 550 }],
+                  },
+                  {
+                    id: 1,
+                    name: "ДоДо",
+                    imageUrl: "",
+                    price: 550,
+                    items: [{ price: 550 }],
+                  },
+                  {
+                    id: 1,
+                    name: "ДоДо",
+                    imageUrl: "",
+                    price: 550,
+                    items: [{ price: 550 }],
+                  },
+                ]}
+                categoryId={1}
+              />
+              <ProductsGroupList
+                title="Завтраки"
+                items={[
+                  {
+                    id: 1,
+                    name: "ДоДо",
+                    imageUrl: "",
+                    price: 550,
+                    items: [{ price: 550 }],
+                  },
+                  {
+                    id: 1,
+                    name: "ДоДо",
+                    imageUrl: "",
+                    price: 550,
+                    items: [{ price: 550 }],
+                  },
+                  {
+                    id: 1,
+                    name: "ДоДо",
+                    imageUrl: "",
+                    price: 550,
+                    items: [{ price: 550 }],
+                  },
+                  {
+                    id: 1,
+                    name: "ДоДо",
+                    imageUrl: "",
+                    price: 550,
+                    items: [{ price: 550 }],
+                  },
+                  {
+                    id: 1,
+                    name: "ДоДо",
+                    imageUrl: "",
+                    price: 550,
+                    items: [{ price: 550 }],
+                  },
+                  {
+                    id: 1,
+                    name: "ДоДо",
+                    imageUrl: "",
+                    price: 550,
+                    items: [{ price: 550 }],
+                  },
+                ]}
+                categoryId={1}
+              />
             </div>
           </div>
         </div>

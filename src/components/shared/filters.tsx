@@ -57,6 +57,13 @@ export const Filters: React.FC<Props> = ({ className }) => {
           { text: "Пармезан", value: "8" },
         ]}
       />
+      <div className="mt-5 border-t border-t-neutral-100 py-6">
+        <p className="font-bold mb-3">Тип теста:</p>
+        <div className="flex flex-col gap-3">
+          <FilterCheckbox text="Традиционное" value="3" />
+          <FilterCheckbox text="Тонкое" value="4" />
+        </div>
+      </div>
     </div>
   );
 };
