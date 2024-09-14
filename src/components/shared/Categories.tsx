@@ -19,7 +19,7 @@ const cats = [
 ];
 
 export const Categories: React.FC<Props> = ({ className }) => {
-  const { activeId, setActiveId } = useCategoryStore((state) => state);
+  const activeId = useCategoryStore((state) => state.activeId);
 
   return (
     <div
@@ -34,6 +34,7 @@ export const Categories: React.FC<Props> = ({ className }) => {
                 "bg-white shadow-md shadow-gray-200 text-primary"
             )}
             key={index}
+            href={`/#${cat}`}
           >
             <button>{cat}</button>
           </a>
