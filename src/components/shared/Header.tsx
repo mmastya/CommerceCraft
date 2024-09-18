@@ -4,7 +4,9 @@ import { Button } from "../ui";
 import { User, ShoppingCart, ArrowRight } from "lucide-react";
 import { Container } from "./Container";
 import Image from "next/image";
-import logo from "../../public/logo.png"
+import logo from "../../public/logo.png";
+import Link from "next/link";
+import { SearchInput } from "./search-input";
 
 interface Props {
   className?: string;
@@ -14,14 +16,19 @@ export const Header: React.FC<Props> = ({ className }) => {
   return (
     <header className={cn("border border-b", className)}>
       <Container className="flex items-center justify-between py-8">
-        <div className="flex items-center gap-4">
-          <Image src={logo} alt="logo" width={35} height={35} />
-          <div>
-            <h1 className="text-2xl uppercase font-black">Pizza</h1>
-            <p className="text-sm text-gray-400 leading-3">
-              вкусней уже некуда
-            </p>
+        <Link href="/">
+          <div className="flex items-center gap-4">
+            <Image src={logo} alt="logo" width={35} height={35} />
+            <div>
+              <h1 className="text-2xl uppercase font-black">Pizza</h1>
+              <p className="text-sm text-gray-400 leading-3">
+                вкусней уже некуда
+              </p>
+            </div>
           </div>
+        </Link>
+        <div className="mx-10 flex-1">
+          <SearchInput/>
         </div>
         <div className="flex items-center gap-3">
           <Button variant="outline" className="flex items-center gap-1">
