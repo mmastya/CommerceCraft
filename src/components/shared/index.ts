@@ -1,7 +1,7 @@
-export { Header } from './Header';
-export { Container } from './Container';
-export { Title } from './Title';
-export { Categories } from './Categories';
+export { Header } from './header';
+export { Container } from './container';
+export { Title } from './title';
+export { Categories } from './categories';
 export { SortPopup } from './sort-popup';
 export { TopBar } from './top-bar';
 export { Filters } from './filters';

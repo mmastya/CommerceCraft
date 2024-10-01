@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Title } from '../shared/Title';
+import { Title } from '../shared/title';
 import { Input } from '../ui';
 import { RangeSlider } from './range-slider';
 import { CheckboxFiltersGroup } from './checkbox-filters-group';
@@ -20,7 +20,6 @@ export const Filters: React.FC<Props> = ({ className }) => {
   const items = ingredients.map((item) => ({ value: String(item.id), text: item.name }));
 
   const updatePrices = (prices: number[]) => {
-    console.log(prices, 999);
     filters.setPrices('priceFrom', prices[0]);
     filters.setPrices('priceTo', prices[1]);
   };
@@ -29,7 +28,6 @@ export const Filters: React.FC<Props> = ({ className }) => {
     <div className={className}>
       <Title text="Фильтрация" size="sm" className="mb-5 font-bold" />
 
-      {/* Верхние чекбоксы */}
       <CheckboxFiltersGroup
         title="Тип теста"
         name="pizzaTypes"
@@ -55,7 +53,6 @@ export const Filters: React.FC<Props> = ({ className }) => {
         ]}
       />
 
-      {/* Фильтр цен */}
       <div className="mt-5 border-y border-y-neutral-100 py-6 pb-7">
         <p className="font-bold mb-3">Цена от и до:</p>
         <div className="flex gap-3 mb-5">
