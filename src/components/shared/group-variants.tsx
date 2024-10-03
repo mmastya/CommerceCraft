@@ -16,7 +16,6 @@ interface Props {
 
 export const GroupVariants: React.FC<Props> = ({
   items,
-  onClick,
   selectedValue,
   className,
 }) => {
