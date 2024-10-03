@@ -27,14 +27,14 @@ export const ProductsGroupList: React.FC<Props> = ({
     threshold: 0.4,
   });
 
-  const { activeId, setActiveId } = useCategoryStore((state) => state);
+  const setActiveId = useCategoryStore((state) => state.setActiveId);
 
   useEffect(() => {
     if (intersection?.isIntersecting) {
       console.log(categoryId);
       setActiveId(categoryId);
     }
-  }, [categoryId, intersection?.isIntersecting]);
+  }, [categoryId, intersection?.isIntersecting, setActiveId]);
 
   return (
     <div className={className} id={title} ref={intersectionRef}>
